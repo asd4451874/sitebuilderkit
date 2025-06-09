@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "keyword":"需求分析",
+    "traffic": "网站流量分析",
+    "domains": "网站域名",
+    "deployment": "网站部署",
+    "tools": "编程工具",
+    "api": "API 获取",
+    "tutorials": "编程教程",
+    "blogs": "博客"
+  },
+  "home": {
+    "title": "为创造者导航 | 精选网站工具与教程库",
+    "subtitle": "发现最佳工具，提升您的网站开发效率"
+  },
+  "placeholder": {
+    "search": "搜索工具、教程或标签..."
+  },
+  "card": {
+    "visit": "访问官网"
+  },
+  "footer": {
+    "about": "关于我们",
+    "submit": "提交工具",
+    "contact": "联系方式:"
+  }
+}

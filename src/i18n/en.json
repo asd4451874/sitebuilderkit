@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "keyword":"Requirement Analysis",
+    "traffic": "Website Traffic Analysis",
+    "domains": "Website Domains",
+    "deployment": "Website Deployment",
+    "tools": "Programming Tools",
+    "api": "API Acquisition",
+    "tutorials": "Programming Tutorials",
+    "blogs": "Blogs"
+  },
+  "home": {
+    "title": "Navigator for Creators | Curated Website Tools & Tutorials",
+    "subtitle": "Discover the best tools to enhance your website development efficiency"
+  },
+  "placeholder": {
+    "search": "Search tools, tutorials or tags..."
+  },
+  "card": {
+    "visit": "Visit Website"
+  },
+  "footer": {
+    "about": "About Us",
+    "submit": "Submit Tool",
+    "contact": "Contact:"
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为创造者导航 | 精选网站工具与教程库</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <a href="index.html" class="logo">ToolNav</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" data-category="requirement-analysis"><i class="lucide-search"></i> <span data-i18n="nav.keyword">需求分析</span></a></li>
+                    <li><a href="#" data-category="website-traffic"><i class="lucide-bar-chart"></i> <span data-i18n="nav.traffic">网站流量分析</span></a></li>
+                    <li><a href="#" data-category="website-domains"><i class="lucide-globe"></i> <span data-i18n="nav.domains">网站域名</span></a></li>
+                    <li><a href="#" data-category="website-deployment"><i class="lucide-server"></i> <span data-i18n="nav.deployment">网站部署</span></a></li>
+                    <li><a href="#" data-category="api-tools"><i class="lucide-api"></i> <span data-i18n="nav.api">API 获取</span></a></li>
+                    <li><a href="#" data-category="programming-tutorials"><i class="lucide-book-open"></i> <span data-i18n="nav.tutorials">编程教程</span></a></li>
+                    <li><a href="#" data-category="blogs"><i class="lucide-file-text"></i> <span data-i18n="nav.blogs">博客</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <main class="content">
+            <!-- 页头 -->
+            <header class="header">
+                <div class="mobile-menu-toggle">
+                    <i class="lucide-menu"></i>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" data-i18n="placeholder.search" placeholder="搜索工具、教程或标签...">
+                    <button class="search-button"><i class="lucide-search"></i></button>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="zh">中</button>
+                    <span>/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </header>
+
+            <!-- 首页内容 -->
+            <div class="home-content active" id="home">
+                <div class="hero">
+                    <h1 class="main-title" data-i18n="home.title">为创造者导航 | 精选网站工具与教程库</h1>
+                    <p class="sub-title" data-i18n="home.subtitle">发现最佳工具，提升您的网站开发效率</p>
+                    <div class="hero-search">
+                        <input type="text" class="hero-search-input" data-i18n="placeholder.search" placeholder="搜索工具、教程或标签...">
+                        <button class="hero-search-button"><i class="lucide-search"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分类内容页 -->
+            <div class="category-content" id="category-content">
+                <h2 class="category-title" id="current-category">分类名称</h2>
+                <div class="card-grid" id="card-container">
+                    <!-- 卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+
+            <!-- 页脚 -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" data-i18n="footer.about">关于我们</a>
+                        <a href="#" data-i18n="footer.submit">提交工具</a>
+                    </div>
+                    <div class="contact">
+                        <span data-i18n="footer.contact">联系方式:</span> <a href="mailto:contact@toolnav.com">asd4451874@outlook.com</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2025 ToolNav
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- 卡片模板 -->
+    <template id="card-template">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"></h3>
+            </div>
+            <div class="card-body">
+                <p class="card-description"></p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link" target="_blank"><i class="lucide-external-link"></i> <span data-i18n="card.visit">访问官网</span></a>
+                <div class="card-tags">
+                    <span class="card-platform"></span>
+                    <div class="tags"></div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
